@@ -74,4 +74,3 @@ export const deleteClause = async (req, res) => {
 
   res.json({ message: "Post deleted successfully" });
 };
-
