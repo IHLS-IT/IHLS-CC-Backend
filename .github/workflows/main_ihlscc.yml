@@ -55,18 +55,20 @@ jobs:
         run: unzip release.zip
       
       - name: Login to Azure
-        uses: azure/login@v1
+        uses: azure/login@v2
         with:
           client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_FE0183F26495446ABBF772430AFC1755 }}
           tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_9A228D61D12042FCB85D0E9AB86AF76D }}
           subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_D129A2D96A1B42F6941F611045EF5653 }}
+          enable-AzPSSession: false
+          auth-type: federated
 
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'IHLSCC'
-          slot-name: 'Production'
+          slot-name: 'default'
           package: .
           
 
