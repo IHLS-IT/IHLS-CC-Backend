@@ -11,7 +11,7 @@ import mongoose from "mongoose";
 
 /**
  * Defines the Arcus model.
- * @typedef {Object} ArcusModel
+ * @typedef {Object} AnyModel
  * @property {function} model - The Mongoose model function.
  */
 
