@@ -33,6 +33,8 @@ app.use("/mvCredit", mvCreditRoutes);
 app.use("/solon", solonRoutes);
 
 const PORT = process.env.PORT || 8080;
+console.log(`Server will run on port: ${PORT}`); // Add this line to check the PORT value
+
 mongoose
   .connect(process.env.CONNECTION_URL)
   .then(() => app.listen(PORT, () => console.log(`Server running on port: ${PORT}`)))
