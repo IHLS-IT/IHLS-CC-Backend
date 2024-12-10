@@ -5,13 +5,13 @@ import dotenv from "dotenv";
 import cors from "cors";
 import process from "process";
 
-import arcusRoutes from "./routes/arcus.js";
-import ussRoutes from "./routes/uss.js";
-import anyRoutes from "./routes/any.js";
-import ifmRoutes from "./routes/ifm.js";
-import cppibRoutes from "./routes/cppib.js";
-import mvCreditRoutes from "./routes/mvCredit.js";
-import solonRoutes from "./routes/solon.js";
+import arcusRoutes from "./Routes/arcus.js";
+import ussRoutes from "./Routes/uss.js";
+import anyRoutes from "./Routes/any.js";
+import ifmRoutes from "./Routes/ifm.js";
+import cppibRoutes from "./Routes/cppib.js";
+import mvCreditRoutes from "./Routes/mvCredit.js";
+import solonRoutes from "./Routes/solon.js";
 
 const app = express();
 dotenv.config({ path: "./.env" });
