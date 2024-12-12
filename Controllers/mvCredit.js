@@ -2,7 +2,7 @@ import express from "express";
 import mongoose from "mongoose";
 import console from "console";
 
-import Clauses from "../models/mvCredit.js";
+import Clauses from "../Models/mvCredit.js";
 
 /**
  * Retrieves all clauses from the database

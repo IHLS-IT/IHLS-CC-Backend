@@ -10,7 +10,7 @@ import Clauses from "../Models/uss.js";
  * @param {Object} res - The response object
  * @returns {Object} - The retrieved clauses
  */
-console.log("Hello from  controller uss.js");
+
 export const getClauses = async (req, res) => {
   try {
     const postClauses = await Clauses.find();

@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 /**
- * Defines the schema for a clause in the Arcus model.
+ * Defines the schema for a clause in the MvCredit model.
  * @typedef {Object} ClauseSchema
  * @property {string} id - The unique identifier for the clause.
  * @property {string} Name - The name of the clause.
@@ -10,13 +10,13 @@ import mongoose from "mongoose";
  */
 
 /**
- * Defines the Arcus model.
- * @typedef {Object} ArcusModel
+ * Defines the mvCredit Model.
+ * @typedef {Object} mvCreditModel
  * @property {function} model - The Mongoose model function.
  */
 
 /**
- * The Mongoose schema for the Arcus model.
+ * The Mongoose schema for the mvCredit Model.
  * @type {ClauseSchema}
  */
 const clauseSchema = mongoose.Schema({
@@ -27,8 +27,8 @@ const clauseSchema = mongoose.Schema({
 });
 
 /**
- * The Mongoose model for the Arcus model.
- * @type {ArcusModel}
+ * The Mongoose model for the MvCredit model.
+ * @type {mvCreditModel}
  */
 const mvCredit = mongoose.model("mvCredit", clauseSchema, "mvCredit");
 
