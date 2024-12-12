@@ -4,7 +4,7 @@
  */
 
 import mongoose from "mongoose";
-
+console.log("Hello from Models uss.js");
 /**
  * Defines the schema for the 'uss' collection in the MongoDB database.
  * @param {String} id - The unique identifier for the clause.
@@ -23,4 +23,5 @@ const clauseSchema = mongoose.Schema({
  * Defines the 'uss' model using the clauseSchema and exports it.
  */
 const uss = mongoose.model("uss", clauseSchema, "uss");
+
 export default uss;

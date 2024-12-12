@@ -40,12 +40,3 @@ mongoose
   .then(() => app.listen(PORT, () => console.log(`Server running on port: ${PORT}`)))
   .catch((error) => console.log(error.message));
 
-
-  app.get("/uss", async (req, res) => {
-    try {
-      const data = await uss.find(); // Replace YourModel with your actual model
-      res.status(200).json(data);
-    } catch (error) {
-      res.status(500).json({ message: error.message });
-    }
-  });

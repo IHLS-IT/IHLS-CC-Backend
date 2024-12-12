@@ -2,7 +2,7 @@ import express from "express";
 import mongoose from "mongoose";
 import console from "console";
 
-import Clauses from "../Models/uss";
+import Clauses from "../Models/uss.js";
 
 /**
  * Retrieves all clauses from the database
@@ -10,6 +10,7 @@ import Clauses from "../Models/uss";
  * @param {Object} res - The response object
  * @returns {Object} - The retrieved clauses
  */
+console.log("Hello from  controller uss.js");
 export const getClauses = async (req, res) => {
   try {
     const postClauses = await Clauses.find();
