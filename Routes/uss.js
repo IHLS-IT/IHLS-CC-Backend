@@ -2,7 +2,7 @@
 import express from "express";
 
 // Importing the controller functions for handling the routes
-import { getClauses, createClause, updateClause, deleteClause } from "../Controllers/uss.js";
+import { getClauses, createClause, updateClause, deleteClause } from "../Controllers/uss";
 
 // Creating a new router instance
 const router = express.Router();

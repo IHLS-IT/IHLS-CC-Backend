@@ -2,7 +2,7 @@ import express from "express";
 import mongoose from "mongoose";
 import console from "console";
 
-import Clauses from "../Models/uss.js";
+import Clauses from "../Models/uss";
 
 /**
  * Retrieves all clauses from the database
